@@ -4,6 +4,17 @@ from Backend.matching_engine import calculate_similarity
 from Backend.skill_analyzer import extract_skills
 from Backend.ats_checker import calculate_ats_score
 
+import streamlit as st
+
+st.title("AI Resume Matcher")
+st.write("App deployed successfully!")
+
+st.subheader("Upload Resume")
+uploaded_file = st.file_uploader("Upload your resume", type=["pdf","txt"])
+
+if uploaded_file:
+    st.success("Resume uploaded successfully!")
+    
 # ---------------- DATABASE FUNCTIONS ---------------- #
 
 def create_user(username, password):
