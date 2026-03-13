@@ -43,3 +43,18 @@ Built using Streamlit with:
 ---
 
 ## 🏗️ Project Architecture
+AI-Resume-Platform
+│
+├── frontend
+│ └── app.py
+│
+├── Backend
+│ ├── matching_engine.py
+│ ├── skill_analyzer.py
+│ └── ats_checker.py
+│
+├── models
+│ └── sbert_model.py
+│
+├── requirements.txt
+└── README.md
