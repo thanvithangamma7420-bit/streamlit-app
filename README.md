@@ -1,60 +1,86 @@
-# AI Resume Matching & Skill Recommendation System
+# 🚀 AI Resume Analyzer & SkillMatch Platform
 
-An AI-powered web application that analyzes resumes, matches them with job descriptions, and provides skill recommendations using Natural Language Processing (NLP).
+An AI-powered Resume Analysis and Skill Matching Platform that helps students and job seekers evaluate how well their resumes match job descriptions.
 
-This project is built using **Python**, **Streamlit**, and **Sentence-BERT embeddings** to calculate semantic similarity between resumes and job descriptions.
+The system uses **Natural Language Processing (NLP)** and **Sentence-BERT embeddings** to calculate semantic similarity between resumes and job descriptions. It also performs **skill extraction, ATS scoring, and skill gap analysis** to help improve resumes.
 
 ---
 
-## 🚀 Features
+# 🌟 Project Overview
 
-### 🔐 User Authentication
-- User account creation
-- Login system
+Recruiters today use **Applicant Tracking Systems (ATS)** to filter resumes before they reach human reviewers.
+
+This project helps users:
+
+✔ Check how well their resume matches a job description  
+✔ Identify missing skills required for the job  
+✔ Improve ATS compatibility  
+✔ Understand their career skill gaps  
+
+The platform provides a **simple dashboard where users can upload or paste their resume and compare it with job descriptions.**
+
+---
+
+# 🎯 Key Features
+
+## 🔐 User Authentication
+- User registration
+- Login functionality
 - Secure access to the dashboard
 
-### 📊 Resume Analysis Dashboard
-- Upload or paste resume text
-- Paste job description
+---
+
+## 📊 Resume Matching Dashboard
+Users can:
+
+- Paste or upload resume text
+- Input job description
 - Analyze resume-job compatibility
-
-### 🎯 AI Resume Matching
-- Uses **Sentence-BERT embeddings**
-- Calculates **semantic similarity**
-- Generates a **Match Score (0–100)**
-
-### 🧠 Skill Intelligence
-- Extracts skills from resume and job description
-- Shows:
-  - Matched skills
-  - Missing skills
-
-### 📈 ATS Score Analysis
-- Calculates ATS compatibility score
-- Helps improve resume for Applicant Tracking Systems
-
-### 🎨 Interactive Web Interface
-Built using Streamlit with:
-- User login
-- Dashboard
-- Skill analysis display
-- Match score metrics
 
 ---
 
-## 🏗️ Project Architecture
-AI-Resume-Platform
-│
-├── frontend
-│ └── app.py
-│
-├── Backend
-│ ├── matching_engine.py
-│ ├── skill_analyzer.py
-│ └── ats_checker.py
-│
-├── models
-│ └── sbert_model.py
-│
-├── requirements.txt
-└── README.md
+## 🤖 AI Resume Matching Engine
+The system uses **Sentence-BERT (SBERT)** embeddings to convert text into vectors and compute semantic similarity.
+
+Features include:
+
+- Resume embedding generation
+- Job description embedding generation
+- Cosine similarity calculation
+- Match score generation (0–100)
+
+---
+
+## 🧠 Skill Intelligence System
+The system automatically extracts skills from both:
+
+- Resume
+- Job Description
+
+Then identifies:
+
+✔ Matched skills  
+❌ Missing skills  
+
+This helps users understand what skills they need to learn.
+
+---
+
+## 📈 ATS Score Analyzer
+The ATS system calculates how well the resume matches the job requirements.
+
+ATS score considers:
+
+- Skill match percentage
+- Resume keyword coverage
+- Job description requirements
+
+Output includes:
+
+✔ ATS Score  
+✔ Matched Skills  
+✔ Missing Skills  
+
+---
+
+# 🏗 System Architecture
